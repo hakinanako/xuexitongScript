@@ -42,7 +42,7 @@ function watchVideo(frameObj, v_done){
     var v = undefined;
     v = frameObj.contents().eq(v_done).find("video#video_html5_api").get(0);window.a = v;
     // 设置倍速
-    try{ v.playbackRate = 8;}
+    try{ v.playbackRate = 2;}
     catch(e){console.error("倍速设置失败！此节可能有需要回复内容，不影响，跳至下一节。错误信息："+e); nextUnit(); return;}
     // 播放
     v.play();
